@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CV </title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 40px 0;
+    background: #e5e5e5;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-wrapper {
+    width: 850px;
+    background: white;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.18);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+/* LINE SEPARATOR */
+.cv-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 35%;
+    width: 1px;
+    height: 100%;
+    background: rgba(0,0,0,0.15);
+}
+
+/* LEFT */
+.left {
+    width: 35%;
+    background: #f3ece2;
+    padding: 45px 35px;
+    box-sizing: border-box;
+}
+
+/* 🔥 AVATAR EFFECT (glow + rotate) */
+.avatar-wrapper {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    margin-bottom: 30px;
+}
+.cv-wrapper {
+    width: 850px;
+    background: white;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.18);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+/* LINE SEPARATOR */
+.cv-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 35%;
+    width: 1px;
+    height: 100%;
+    background: rgba(0,0,0,0.15);
+}
+
+.avatar-frame {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    width: 85px;
+    height: 85px;
+    border: 3px solid #f7dcdc;
+    border-radius: 50%;
+    animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.avatar {
+    width: 100%;
+    height: 210px;
+    border-radius: 10px;
+    object-fit: cover;
+    animation: softFloat 4s ease-in-out infinite alternate;
+}
+
+/* Animation keyframes */
+@keyframes softFloat {
+    0% { transform: rotate(-1deg) translateY(0px); }
+    100% { transform: rotate(1deg) translateY(3px); }
+}
+
+@keyframes pulseGlow {
+    0% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.17); }
+    100% { opacity: 0.3; transform: scale(1); }
+}
+
+/* TEXT STYLES */
+.section-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.info-block {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* RIGHT COLUMN */
+.right {
+    width: 65%;
+    padding: 50px 45px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    font-size: 52px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.section {
+    margin-top: 35px;
+}
+
+.section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    width: fit-content;
+}
+
+.section ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style: disc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* SKILLS & TAGS */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.tag {
+    background: #e8dfcd;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.10);
+}
+
+.skill-bar {
+    background: #eee;
+    height: 6px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.bar {
+    height: 100%;
+    background: linear-gradient(to right, #e4c892, #edb98c);
+    border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+<div class="cv-wrapper">
+
+    <!-- LEFT SECTION -->
+    <div class="left">
+        <img src="./ảnh/ảnh đại diện.jpg" class="avatar">
+        <div class="info-block">
+           
+        </div>
+
+        <div class="info-block">
+            <div class="section-title">Profile </div>
+            From <strong> Khanh Hoa Province</strong> - Vietnam<br>
+            21/10/2007<br>
+            Ho Chi Minh City University of Education<br>
+            HCMUE
+        </div>
+
+        <div class="info-block">
+            <div class="section-title">CONTACT</div>
+            Phone : 0943222795 <br>
+            Email : guiiugvvhhh@gmail.com
+        </div>
+
+        <div class="info-block">
+            <div class="section-title">SKILLS</div>
+
+            HTML
+            <div class="skill-bar"><div class="bar" style="width: 50%"></div></div>
+
+            CSS
+            <div class="skill-bar"><div class="bar" style="width: 50%"></div></div>
+
+            MySQL
+            <div class="skill-bar"><div class="bar" style="width: 50%"></div></div>
+
+            Git
+            <div class="skill-bar"><div class="bar" style="width: 50%"></div></div>
+
+            Javascript
+            <div class="skill-bar"><div class="bar" style="width: 50%"></div></div>
+
+            Bootstrap
+            <div class="skill-bar"><div class="bar" style="width: 50%"></div></div>
+        </div>
+
+        <div class="info-block">
+            <div class="section-title">HOBBY</div>
+            <div class="tag-list">
+                <div class="tag">Xem phim</div>
+                <div class="tag">Nghe nhạc</div>
+                <div class="tag">Đọc sách</div>
+                <div class="tag">Nấu ăn</div>
+            </div>
+        </div>
+         <div class="section"> 
+            <h3>Accumulate Skills</h3> 
+            <strong>2018 - 2025</strong> <br>
+           Teamwork <br>
+Communication <br>
+Planning <br>
+Time management <br>
+Problem-solving <br>
+Collaboration<br>
+Technical skills<br>
+Community service <br>
+Empathy <br>
+Information management <br>
+Project management <br>
+        </div>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right">
+        <h1>Nguyễn Ngọc Thảo Nguyên</h1>
+        <h2>A first-year Information Technology student</h2>
+
+        <div class="info-block">
+            <div class="section-title">ABOUT ME</div>
+            <p>
+           Tôi tên là Nguyễn Ngọc Thảo Nguyên , hiện đang ở năm học đầu tiên của chuyên ngành Công nghệ thông tin trường Đại Học Sư Phạm Thành Phố Hồ Chí Minh. 
+            Ngay từ đầu, tôi đã định hướng rõ ràng niềm yêu thích của mình là giải quyết vấn đề bằng mã nguồn. 
+            Nhận thức được mình còn thiếu kinh nghiệm thực tế, tôi đã biến sự thiếu sót này thành động lực, liên tục rèn luyện kỹ năng cốt lõi và tìm tòi các phương pháp học tập hiệu quả ngoài giáo trình. 
+            Mục tiêu hiện tại của tôi là tìm kiếm một môi trường năng động, cho phép tôi vừa làm việc vừa học hỏi, từ đó tôi có thể biến đam mê thành chuyên môn vững chắc và chuẩn bị tốt nhất cho con đường phát triển sự nghiệp trong ngành công nghệ.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Experience</h3>
+
+            <strong>2018 - 2025</strong>
+            <br>Giai đoạn 2018–2025, tôi tích lũy nền tảng kỹ năng qua các hoạt động học thuật, truyền thông và cộng đồng.
+            <br>
+            <br>
+            Kỹ năng tư duy & kỹ thuật
+            <ul>
+                <li>Tham gia Rung Chuông Vàng → rèn phản xạ và xử lý nhanh. </li>
+                <li>Tự học và thực hành thiết kế poster, dựng video phục vụ CLB Học thuật & Sáng tạo và dự án truyền thông.</li>
+                <li>Áp dụng kỹ năng lập kế hoạch và quản lý thời gian trong học tập & hoạt độn</li>
+            </ul>
+                <br>
+            Hoạt động nổi bật <br>
+            <ul>
+                <li>Ngày hội STEM → phát triển tư duy phản biện và giải quyết vấn đề.</li>
+                <li>Chiến dịch Hoa phượng đỏ → rèn giao tiếp và làm việc cường độ cao.</li>
+                <li>Tiếp sức mùa thi → tăng cường phối hợp đội nhóm và xử lý tình huống.</li>
+            </ul>
+            <br>
+           Hoạt động cộng đồng
+            <ul>
+                <li>Ngày chủ nhật xanh</li>
+                <li>Thắp sáng ước mơ & chương trình tặng quà Tết cho học sinh khó khăn</li>
+            </ul>
+        </div>
+        </div>
+      </div>
+</div>
+</body>
+</html>
